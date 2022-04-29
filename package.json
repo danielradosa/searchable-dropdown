@@ -1,5 +1,6 @@
 {
   "name": "searchable-dropdown",
+  "source": "demo/index.html",
   "version": "1.0.0",
   "private": false,
   "description": "Lit searchable dropdown web component",
@@ -7,7 +8,7 @@
   "author": "Daniel Radosa",
   "scripts": {
     "start": "parcel demo/index.html --open",
-    "build": "tsc build"
+    "build": "parcel build"
   },
   "dependencies": {
     "@lit/reactive-element": "^1.0.0",
@@ -21,8 +22,8 @@
     "@web/dev-server": "0.1.31",
     "@web/dev-server-esbuild": "0.3.0",
     "@web/test-runner": "0.13.27",
-    "parcel": "^2.5.0",
-    "tslib": "2.4.0",
+    "parcel": "latest",
+    "tslib": "^2.4.0",
     "typescript": "4.6.3"
   }
 }
