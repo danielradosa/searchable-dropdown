@@ -5,7 +5,6 @@
   "description": "Lit searchable dropdown web component",
   "license": "MIT",
   "author": "modern web",
-
   "scripts": {
     "start": "parcel demo/index.html --open",
     "start:watch": "web-dev-server --open demo/ --node-resolve --watch",
@@ -15,8 +14,7 @@
     "build:watch": "tsc --watch"
   },
   "dependencies": {
-    "lit": "^2.2.3",
-    "lit-html": "1.4.1"
+    "lit": "^2.2.3"
   },
   "devDependencies": {
     "@open-wc/testing": "2.5.33",

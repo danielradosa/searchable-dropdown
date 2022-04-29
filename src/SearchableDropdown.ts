@@ -1,4 +1,5 @@
-import { LitElement, html, customElement, property, css } from 'lit-element';
+import { LitElement, html, css } from 'lit';
+import { customElement, property } from 'lit/decorators.js';
 import { styleMap } from 'lit-html/directives/style-map.js';
 
 @customElement('searchable-dropdown')
@@ -86,13 +87,21 @@ export class SearchableDropdown extends LitElement {
       <div class="dropdown">
         <button @click=${this.toggleDropdown}>
           ${this.btnTitle}
-          <img src="https://cdn-icons-png.flaticon.com/512/7344/7344812.png" style="height: .6em;" />
+          <img
+            src="https://cdn-icons-png.flaticon.com/512/7344/7344812.png"
+            style="height: .6em;"
+          />
         </button>
 
-        <div class="dropdown-content" style=${styleMap(this.dropdownStyle)} id="dropdown">
+        <div
+          class="dropdown-content"
+          style=${styleMap(this.dropdownStyle)}
+          id="dropdown"
+        >
           <input
             type="text"
-            placeholder="Search..."}
+            placeholder="Search..."
+            }
             id="input"
             @keyup=${this.filterSearch}
           />
