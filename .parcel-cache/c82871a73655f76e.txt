@@ -5,16 +5,16 @@
 92D:\Umbraco Homework\simple-element\node_modules\typescript\loc\lcl\DEU\TypeScriptDebugEngine132956214053028612 1
 63D:\Umbraco Homework\simple-element\node_modules\es-to-primitive132956214022752935 1
 61D:\Umbraco Homework\simple-element\web-test-runner.config.mjs132956213421259792 0
-47D:\Umbraco Homework\simple-element\package.json132957122327862731 0
+47D:\Umbraco Homework\simple-element\package.json132957154349282539 0
 56D:\Umbraco Homework\simple-element\node_modules\@sinonjs132956213992927126 1
 68D:\Umbraco Homework\simple-element\node_modules\extract-zip\index.js132956214006321854 0
 97D:\Umbraco Homework\simple-element\node_modules\resolve\test\resolver\other_path\lib\other-lib.js132956214033417487 0
 62D:\Umbraco Homework\simple-element\node_modules\lodash\lang.js132957087133812602 0
 68D:\Umbraco Homework\simple-element\node_modules\resolve\test\core.js132956214024027968 0
-60D:\Umbraco Homework\simple-element\src\SearchableDropdown.ts132957147045120118 0
+60D:\Umbraco Homework\simple-element\src\SearchableDropdown.ts132957153799971823 0
 100D:\Umbraco Homework\simple-element\node_modules\@web\dev-server\dist\config\DevServerConfig.d.ts.map132956214023762966 0
 96D:\Umbraco Homework\simple-element\node_modules\puppeteer-core\lib\esm\puppeteer\node\install.js132956214034767509 0
-39D:\Umbraco Homework\simple-element\dist132957150209571940 1
+39D:\Umbraco Homework\simple-element\dist132957153801953700 1
 92D:\Umbraco Homework\simple-element\node_modules\yargs\node_modules\string-width\package.json132956214003316782 0
 79D:\Umbraco Homework\simple-element\node_modules\axe-core\lib\standards\index.js132956214040832511 0
 67D:\Umbraco Homework\simple-element\node_modules\lodash\_getValue.js132957087127972597 0
@@ -129,7 +129,7 @@
 78D:\Umbraco Homework\simple-element\node_modules\typescript\lib\lib.es2017.d.ts132956214054073639 0
 90D:\Umbraco Homework\simple-element\node_modules\utility-types\dist\aliases-and-guards.d.ts132957094660173852 0
 67D:\Umbraco Homework\simple-element\node_modules\has-bigints\.github132956214016948984 1
-44D:\Umbraco Homework\simple-element\README.md132957118763517760 0
+44D:\Umbraco Homework\simple-element\README.md132957150702772947 0
 64D:\Umbraco Homework\simple-element\node_modules\css-what\LICENSE132957094646740174 0
 92D:\Umbraco Homework\simple-element\node_modules\raw-body\node_modules\setprototypeof\LICENSE132956214008621784 0
 122D:\Umbraco Homework\simple-element\node_modules\typescript\loc\lcl\RUS\TypeScriptDebugEngine\TypeScriptDebugEngine.dll.lcl132956214053373656 0
@@ -14194,6 +14194,6 @@
 72D:\Umbraco Homework\simple-element\node_modules\.bin\web-test-runner.cmd132956214058374114 0
 59D:\Umbraco Homework\simple-element\node_modules\.bin\_mocha132956214058389104 0
 63D:\Umbraco Homework\simple-element\node_modules\.bin\_mocha.ps1132956214058389104 0
-57D:\Umbraco Homework\simple-element\dist\index.8e9bd240.js132957150209462074 0
-61D:\Umbraco Homework\simple-element\dist\index.8e9bd240.js.map132957150209516962 0
+57D:\Umbraco Homework\simple-element\dist\index.8e9bd240.js132957153801868686 0
+61D:\Umbraco Homework\simple-element\dist\index.8e9bd240.js.map132957153801908667 0
 50D:\Umbraco Homework\simple-element\demo\index.html132957093705021089 0

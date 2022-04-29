@@ -7,14 +7,13 @@
   "author": "modern web",
   "scripts": {
     "start": "parcel demo/index.html --open",
-    "start:watch": "web-dev-server --open demo/ --node-resolve --watch",
-    "test": "web-test-runner test/**/*.test.ts --node-resolve",
-    "test:watch": "web-test-runner test/**/*.test.ts --node-resolve --watch",
-    "build": "tsc build",
-    "build:watch": "tsc --watch"
+    "build": "tsc build"
   },
   "dependencies": {
-    "lit": "^2.2.3"
+    "lit": "^2.0.0",
+    "@lit/reactive-element": "^1.0.0",
+    "lit-element": "^3.0.0",
+    "lit-html": "^2.0.0"
   },
   "devDependencies": {
     "@open-wc/testing": "2.5.33",

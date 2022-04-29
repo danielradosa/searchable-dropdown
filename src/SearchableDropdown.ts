@@ -29,7 +29,7 @@ export class SearchableDropdown extends LitElement {
       color: var(--my-element-button-color, #000);
       font-weight: bold;
       box-sizing: border-box;
-      background-image: url('https://cdn-icons.flaticon.com/png/512/3031/premium/3031293.png?token=exp=1651238021~hmac=48c2ed396965dd50e8738108032086ea');
+      background-image: url('https://icons.veryicon.com/png/o/application/outline-1/search-548.png');
       background-size: 1em;
       background-position: 12px 14px;
       background-repeat: no-repeat;
