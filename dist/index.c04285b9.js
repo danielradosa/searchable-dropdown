@@ -533,7 +533,7 @@ parcelHelpers.export(exports, "SearchableDropdown", ()=>SearchableDropdown
 var _helpers = require("@swc/helpers");
 var _lit = require("lit");
 var _decoratorsJs = require("lit/decorators.js");
-var _styleMapJs = require("lit-html/directives/style-map.js");
+var _styleMap = require("lit/directives/style-map");
 var _class, _descriptor, _dec, _descriptor1, _dec1;
 var _dec2 = _decoratorsJs.customElement('searchable-dropdown');
 let SearchableDropdown = _class = _dec2((_class = class SearchableDropdown extends _lit.LitElement {
@@ -622,7 +622,7 @@ let SearchableDropdown = _class = _dec2((_class = class SearchableDropdown exten
 
         <div
           class="dropdown-content"
-          style=${_styleMapJs.styleMap(this.dropdownStyle)}
+          style=${_styleMap.styleMap(this.dropdownStyle)}
           id="dropdown"
         >
           <input
@@ -692,7 +692,7 @@ let SearchableDropdown = _class = _dec2((_class = class SearchableDropdown exten
     }
 }), _class)) || _class;
 
-},{"@swc/helpers":"6Uysx","lit":"4antt","lit/decorators.js":"bCPKi","lit-html/directives/style-map.js":"kqcVU","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3"}],"6Uysx":[function(require,module,exports) {
+},{"@swc/helpers":"6Uysx","lit":"4antt","lit/decorators.js":"bCPKi","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","lit/directives/style-map":"4GQsu"}],"6Uysx":[function(require,module,exports) {
 var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
 parcelHelpers.defineInteropFlag(exports);
 parcelHelpers.export(exports, "applyDecoratedDescriptor", ()=>_applyDecoratedDescriptorDefault.default
@@ -3574,7 +3574,13 @@ var _queryAssignedElementsJs = require("./query-assigned-elements.js");
     });
 }
 
-},{"./base.js":"d0R9Y","./query-assigned-elements.js":"kKpwU","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3"}],"kqcVU":[function(require,module,exports) {
+},{"./base.js":"d0R9Y","./query-assigned-elements.js":"kKpwU","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3"}],"4GQsu":[function(require,module,exports) {
+var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
+parcelHelpers.defineInteropFlag(exports);
+var _styleMapJs = require("lit-html/directives/style-map.js");
+parcelHelpers.exportAll(_styleMapJs, exports);
+
+},{"lit-html/directives/style-map.js":"kqcVU","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3"}],"kqcVU":[function(require,module,exports) {
 var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
 parcelHelpers.defineInteropFlag(exports);
 parcelHelpers.export(exports, "styleMap", ()=>i

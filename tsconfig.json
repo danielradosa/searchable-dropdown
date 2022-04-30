@@ -1,7 +1,7 @@
 {
   "compilerOptions": {
     "target": "esnext",
-    "module": "esnext",
+    "module": "es2015",
     "moduleResolution": "node",
     "noEmitOnError": true,
     "lib": ["es2017", "dom"],
@@ -11,10 +11,10 @@
     "allowSyntheticDefaultImports": true,
     "experimentalDecorators": true,
     "importHelpers": true,
-    "outDir": "dist",
     "sourceMap": true,
     "inlineSources": true,
-    "rootDir": "./"
+    "outDir": "dist",
+    "rootDir": "./",
   },
   "include": ["**/*.ts"]
 }
