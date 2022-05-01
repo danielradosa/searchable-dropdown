@@ -1,10 +1,10 @@
 import { LitElement, html, css } from 'lit';
-import { customElement, property } from 'lit/decorators.js';
-import { styleMap } from 'lit/directives/style-map';
+import { customElement, property } from 'lit/decorators';
+import { styleMap } from 'lit-html/directives/style-map';
 
 @customElement('searchable-dropdown')
 export class SearchableDropdown extends LitElement {
-  static styles = css`
+  static override styles = css`
     button {
       background: var(--my-element-button-background, #fff);
       color: var(--my-element-button-color, #000);
@@ -82,7 +82,7 @@ export class SearchableDropdown extends LitElement {
 
   dropdownStyle = { display: 'none' };
 
-  render() {
+  override render() {
     return html`
       <div class="dropdown">
         <button @click=${this.toggleDropdown}>
