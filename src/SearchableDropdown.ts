@@ -1,10 +1,15 @@
-import { LitElement, html, css } from 'lit';
-import { customElement, property } from 'lit/decorators';
-import { styleMap } from 'lit-html/directives/style-map';
+import {LitElement, html, css} from 'lit';
+import {customElement, property} from 'lit/decorators';
+import {styleMap} from 'lit-html/directives/style-map';
 
 @customElement('searchable-dropdown')
 export class SearchableDropdown extends LitElement {
   static override styles = css`
+    :host {
+      display: block;
+      position: relative;
+      padding: 2em 4em;
+    }
     button {
       background: var(--my-element-button-background, #fff);
       color: var(--my-element-button-color, #000);
@@ -15,14 +20,18 @@ export class SearchableDropdown extends LitElement {
       font-weight: bold;
       cursor: pointer;
       transition: all 0.2s ease-in-out;
+      margin-top: 2em;
     }
     button:hover {
       background: var(--my-element-button-hover-background, #f1f1f1);
       color: var(--my-element-button-hover-color, #000);
+      box-shadow: 0 0 0 1px var(--my-element-button-hover-border-color, #000);
     }
     .dropdown {
       position: relative;
-      padding: 2em;
+    }
+    i {
+      color: red;
     }
     #input {
       border: none;
@@ -45,7 +54,6 @@ export class SearchableDropdown extends LitElement {
       background-color: #f1f1f1;
       border-radius: 3px;
       margin-top: 0.5em;
-      transtion: all 0.2s ease-in-out;
     }
     .dropdown-content a {
       color: black;
@@ -74,16 +82,26 @@ export class SearchableDropdown extends LitElement {
     }
   `;
 
-  @property({ type: String })
+  @property({type: String})
   btnTitle = 'Dropdown';
 
-  @property({ type: Boolean })
+  @property({type: Array})
+  links = ['Home', 'About', 'Contact', 'Portfolio', 'Blog', 'Services', 'FAQ'];
+
+  @property({type: Boolean})
   showDropdown = false;
 
-  dropdownStyle = { display: 'none' };
+  dropdownStyle = {display: 'none'};
 
   override render() {
     return html`
+      <h3>Daniel's dropdown menu</h3>
+      <h4>Keyboard controls</h4>
+      <ol>
+        <li><b>CTRL + SPACE</b> | Open or close and start searching</li>
+        <li><b>UP or DOWN ARROW KEYS</b> | Browse the menu <i>*not finished</i></li>
+        <li><b>ENTER</b> | Go to selected link <i>*not finished</i></li>
+      </ol>
       <div class="dropdown">
         <button @click=${this.toggleDropdown}>
           ${this.btnTitle}
@@ -105,10 +123,9 @@ export class SearchableDropdown extends LitElement {
             id="input"
             @keyup=${this.filterSearch}
           />
-          <a href="#component">Components</a>
-          <a href="#element">Elements</a>
-          <a href="#styles">Styles</a>
-          <a href="#functions">Functions</a>
+          ${this.links.map(
+            (link) => html` <a id="linkz" href="#${link}">${link}</a> `
+          )}
         </div>
       </div>
     `;
@@ -117,8 +134,7 @@ export class SearchableDropdown extends LitElement {
   // Toggle dropdown menu visibility on click
   toggleDropdown() {
     this.showDropdown = !this.showDropdown;
-    this.dropdownStyle = { display: this.showDropdown ? 'block' : 'none' };
-    console.log(this.dropdownStyle);
+    this.dropdownStyle = {display: this.showDropdown ? 'block' : 'none'};
   }
 
   // Search the drop down menu
@@ -142,6 +158,14 @@ export class SearchableDropdown extends LitElement {
     });
   }
 }
+
+// Open dropdown with control + space function
+window.addEventListener('keydown', (e) => {
+  if (e.keyCode === 32 && e.ctrlKey) {
+    // @ts-expect-error
+    document.querySelector('searchable-dropdown').toggleDropdown();
+  }
+});
 
 declare global {
   interface HTMLElementTagNameMap {
