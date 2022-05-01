@@ -1,6 +1,7 @@
 {
   "name": "searchable-dropdown",
   "source": "demo/index.html",
+  "main": "demo/index.html",
   "version": "1.0.0",
   "private": false,
   "description": "Lit searchable dropdown web component",
