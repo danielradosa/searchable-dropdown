@@ -29,11 +29,9 @@ export class SearchableDropdown extends LitElement {
     }
     .dropdown {
       position: relative;
+      transition: 0.3s linear !important;
     }
-    i {
-      color: red;
-    }
-    #input {
+    #search {
       border: none;
       color: var(--my-element-button-color, #000);
       font-weight: bold;
@@ -54,6 +52,7 @@ export class SearchableDropdown extends LitElement {
       background-color: #f1f1f1;
       border-radius: 3px;
       margin-top: 0.5em;
+      transition: 0.3s linear !important;
     }
     .dropdown-content a {
       color: black;
@@ -62,14 +61,17 @@ export class SearchableDropdown extends LitElement {
       display: block;
       font-weight: normal;
       font-size: 0.9em;
-      transition: all 0.1s ease-in-out;
+      transition: 0.1s linear !important;
     }
-    #input:focus {
+    #search:focus {
       outline: none;
     }
     .dropdown a:hover {
       background-color: #000;
       color: white;
+    }
+    .active {
+      background-color: #000;
     }
     .drop-ic {
       top: 3px;
@@ -98,9 +100,10 @@ export class SearchableDropdown extends LitElement {
       <h3>Daniel's dropdown menu</h3>
       <h4>Keyboard controls</h4>
       <ol>
-        <li><b>CTRL + SPACE</b> | Open or close and start searching</li>
-        <li><b>UP or DOWN ARROW KEYS</b> | Browse the menu <i>*not finished</i></li>
-        <li><b>ENTER</b> | Go to selected link <i>*not finished</i></li>
+        <li><b>CTRL + SPACE</b> | Open or close</li>
+        <li><b>SHIFT + ALT</b> | Start searching</li>
+        <li><b>TAB or SHIFT + TAB</b> | Browse the menu up and down</li>
+        <li><b>ENTER</b> | Go to selected link</li>
       </ol>
       <div class="dropdown">
         <button @click=${this.toggleDropdown}>
@@ -119,8 +122,7 @@ export class SearchableDropdown extends LitElement {
           <input
             type="text"
             placeholder="Search..."
-            }
-            id="input"
+            id="search"
             @keyup=${this.filterSearch}
           />
           ${this.links.map(
@@ -164,6 +166,18 @@ window.addEventListener('keydown', (e) => {
   if (e.keyCode === 32 && e.ctrlKey) {
     // @ts-expect-error
     document.querySelector('searchable-dropdown').toggleDropdown();
+  }
+});
+
+// Focus on input with SHIFT + ALT function
+window.addEventListener('keydown', (e) => {
+  if (e.altKey && e.shiftKey) {
+    // @ts-expect-error
+    document
+      .querySelector('searchable-dropdown')
+      .shadowRoot.querySelector('#search')
+      // @ts-expect-error
+      .focus();
   }
 });
 
