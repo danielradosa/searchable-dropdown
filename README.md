@@ -3,4 +3,5 @@
 2. `npm run start`
 3. `npm run build`
 <hr>
-[Element LINK](https://dnlrds.xyz/dropdown-element/) on live site.
+
+[LIVE DEMO](https://dnlrds.xyz/dropdown-element/) on live site.
