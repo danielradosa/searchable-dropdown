@@ -4,4 +4,4 @@
 3. `npm run build`
 <hr>
 
-[LIVE DEMO](https://dnlrds.xyz/dropdown-element/) on live site.
+[LIVE DEMO](https://dnlrds.xyz/dropdown-element/)
